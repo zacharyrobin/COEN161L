@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 14px 16px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+    opacity: 0.5;
+}
+
+li a:visited {
+    color: inherit;
+}
+
+.primary {
+    background-color: blue;
+}
+
+.primary-text {
+    color: rgba(14, 157, 240, 0.863);
+}
+
+.secondary {
+    background-color: yellow;
+}
+
+.secondary-text {
+    color: rgb(255, 166, 0);
+}
+
+.accent {
+    background-color: red;
+}
+
+.accent {
+    background-color: rgb(255, 0, 140);
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.column-left {
+    float: left;
+    width: 20%;
+    padding: 2%;
+}
+
+.column-right {
+    float: left;
+    width: 70%;
+    padding: 2%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 2%;
+}
