@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variables</title>
+</head>
+<body>
+	<script>
+
+		var x = 0;
+		var str = "hello";
+		// what does the following statement output?:_NaNhello
+		console.log(x + y + str);
+
+		// OUTPUT: NaNhello
+
+		var y = 1;
+
+		// ----------------------------------------
+
+		var obj = {
+			time: new Date(),
+			greeting: "Hello World!",
+			number: 2
+		};
+
+		// Print the greeting by accessing it from the object
+		console.log(obj);
+
+		// OUTPUT: {time: Sun Jan 26 2020 20:36:10 GMT-0800 (Pacific Standard Time), greeting: "Hello World!", number: 2}
+
+		// -----------------------------------------
+
+		// Which of the following statements is printed?:_ false 
+
+		if (z) {
+			console.log("true"); 
+		} else {
+			console.log("false"); // THIS ONE
+		}
+
+		var z = true;
+
+		// -------------------------------------------
+
+		var w = x || y;
+
+		// What is the value of w?:_1
+		console.log(w); 
+
+	</script>
+</body>
+</html>

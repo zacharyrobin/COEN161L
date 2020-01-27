@@ -1,0 +1,127 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+    opacity: 0.5;
+}
+
+li a:visited {
+    color: inherit;
+}
+
+.primary {
+    background-color: red;
+}
+
+.primary-text {
+    color:white;
+}
+
+.secondary {
+    background-color: yellow;
+}
+
+.secondary-text {
+    color: rgb(255, 166, 0);
+}
+
+.accent {
+    background-color: red;
+}
+
+.accent {
+    background-color: rgb(255, 0, 140);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navitem {
+    display: inline-block;
+    padding:2px;
+}
+
+.left-col {
+
+background-color: green;
+width:25%;
+flex-direction: column;
+justify-content: space-around;
+display: flex;
+}
+
+.right-col {
+    background-color:yellow;
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.content p {
+    padding:25px;
+}
+
+.item {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.content {
+    display: flex;;
+    flex-grow: 1;
+    
+}
