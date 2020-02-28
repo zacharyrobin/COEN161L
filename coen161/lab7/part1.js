@@ -31,11 +31,21 @@
 	// Create an XMLHttpRequest object
 	var xyzhttp = new XMLHttpRequest();
 	// Handle succesful responses
-	xyzhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("sample3").innerHTML =
-            this.responseText;
-       }
+	xyzhttp.onreadystatechange = function(){
+		if (this.readyState == 4 && this.status == 200){
+			var response = JSON.parse(this.responseText);
+			var element = document.getElementById("sample3");
+			var ulist = document.createElement("ul");
+
+			for (var i = 0; i < response.friends.length; i++){
+				var item = document.createElement("li");
+                    ulist.appendChild(item);
+				var text = document.createTextNode(response.friends[i].name);
+				item.appendChild(text);
+			}
+
+			element.appendChild(ulist);
+		}
 	};
 	// Get sample3.php
 	xyzhttp.open("GET", "sample3.php", true);
